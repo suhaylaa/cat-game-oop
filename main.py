@@ -13,15 +13,18 @@ What would you like to do:
 2. Feed
 3. Play
 4. Sleep
+5. Show Stats
 """)
 
-if action == 1:
-    my_cat.train()
-elif action == 2:
-    my_cat.feed()
-elif action == 3:
-    my_cat.play()
-elif action == 4:
-    my_cat.sleep()
-else:
-    print("That was not an option.")
+    if action == '1':
+        my_cat.train()
+    elif action == '2':
+        my_cat.feed()
+    elif action == '3':
+        my_cat.play()
+    elif action == '4':
+        my_cat.sleep()
+    elif action == '5':
+        my_cat.showStatsj()
+    else:
+        print("That was not an option.")

@@ -34,3 +34,6 @@ class Cat:
         print(f"{self.name} is sleeping...")
         self.energy += 20
         self.age += 0.1
+    
+    def showStats(self):
+        print(f" This is {self.name}'s stats.")
