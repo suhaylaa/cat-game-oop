@@ -25,6 +25,7 @@ What would you like to do:
     elif action == '4':
         my_cat.sleep()
     elif action == '5':
-        my_cat.showStatsj()
+        my_cat.showStats()
+        
     else:
         print("That was not an option.")
