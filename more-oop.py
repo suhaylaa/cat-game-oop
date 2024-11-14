@@ -1,50 +1,52 @@
+class device:
+   def __init__(self, width, height, name):
+        self.width = width
+        self.height = height
+        self.name = name
 
-class Employee:
+   def powerON(self):
+       print(f"Your {self.name} has been powered on!")
 
-    def __init__(self,name,DOB,role,salary):
-      self.name = name
-      self.DOB = DOB
-      self.salary = salary
-      self.role = role
 
-    def increase_salary(self):
-       print("Your salary has been increased")
-       self.salary = self.salary * 1.05
+class Comp(device):
     
-    def calculate_age(self):
-       Yage = self.age[6:] 
-       age = 2024 - Yage
-       self.age = age
+   def powerON(self):
+       print("Your computer has been powered on!")
+
+   def compute(self):
+       print("Your computer is computing ...")
+   
+   def playGAME(self):
+       print("Your computer has started a game!")
+
+   laptop = Comp('12','20',"laptop")
+   laptop.monitorON()
+
+class Vehicle:
+   def __init__(self,name,speed,size):
+        self.name =  name
+        self.speed = speed
+        self.size = size
+
+   def switchON(self):
+       print(f"Your {Vehicle.name} has switched on!")
+
+   def drive(self):
+       print(f"Your {Vehicle.name} is in drive")
+       
+   def fix(self):
+       print(f"Your {Vehicle.name} is being fixed")
+
+class car(Vehicle):
     
-class Manager:
-   
-    def __int__(self,name,role,salary,bonus,DOB):
-      self.name = name
-      self,role = role
-      self.salary = salary
-      self.bonus = bonus
-      self.DOB = DOB
+   def switchON(self):
+       print(f"Your {car.name} has switched on!")
 
-    def increase_salary(self):
-        print("Your salary has been increased")
-        self.salary = self.salary * 1.1
+   def drive(self):
+       print(f"Your {car.name} is in drive")
+       
+   def fix(self):
+       print(f"Your {car.name} is being fixed")
 
-    def calculate_age(self):
-       Yage = int(self.age[6:]) 
-       age = 2024 - Yage
-       self.age = age
-       print(self.age)
-
-    def increase_bonus(self):
-       print("Your bonus has been increased")
-       self.bonus = self.bonus *1.1
-
-name = input("Enter a name: ")
-role = input("Enter your role: ")
-salary = int(input("enter your salary: "))
-bonus = int(input("Enter your bonus: "))
-DOB = input("Enter your date of birth. dd/mm/yyyy: ")
-my_manager = Manager(name,role,salary,bonus,DOB)
-
-   
-
+   def makeNoise(self):
+       print("Vroom")
